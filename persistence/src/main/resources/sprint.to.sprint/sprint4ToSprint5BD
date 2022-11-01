@@ -1,0 +1,11 @@
+alter sequence subject_professor_details_detail_id_seq rename to contract_contract_id_seq;
+alter table contract rename constraint subject_professor_details_subject_id_fkey to contract_subject_id_fkey;
+alter table contract rename constraint subject_professor_details_professor_id_fkey to contract_professor_id_fkey;
+
+alter table review alter column user_id type integer using user_id::integer;
+alter table review alter column lesson_id type integer using lesson_id::integer;
+
+
+//CAMBIAR LAS REVIEWS!!!
+//AGREGAR profile_image a USERS
+//AGREGAR LOS CHATS

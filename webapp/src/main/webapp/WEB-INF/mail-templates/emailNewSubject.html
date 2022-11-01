@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:with="lang=${#locale.language}" th:lang="${lang}">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);max-width: 300px;margin: auto;text-align: center;background-color: #EEE;border: 4px solid #DDD;padding: 10px;">
+    <h1 th:text="#{email.nuevaMateria}"></h1>
+    <h2 th:text="${user}"></h2>
+    <p class="title" style="color: grey;font-size: 18px;" th:text="${email}"></p>
+    <p class="title" style="color: grey;font-size: 18px;" th:text="#{email.materia(${subject})}"></p>
+    <p class="title" style="color: grey;font-size: 18px;" th:text="#{email.categoria(${category})}"></p>
+    <p class="title" style="color: grey;font-size: 18px;" th:text="#{email.level(${level})}"></p>
+</div>
+</body>
+</html>

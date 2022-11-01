@@ -1,0 +1,36 @@
+alter table users alter column password type varchar(200) using password::varchar(200);
+alter table users add is_professor boolean;
+alter table users add profile_image bytea;
+alter table users add enabled boolean default false;
+
+
+alter table subject_professor_details rename to contract;
+alter table contract rename column detail_id to contract_id;
+alter table contract add contract_description varchar(200),
+add local boolean, add remote boolean, add rating double precision, add price double precision,
+add location varchar(25);
+
+
+CREATE VIEW full_contract AS
+(
+SELECT contract_id,
+       p.professor_id,
+       s.subject_id,
+       contract_description,
+       local,
+       remote,
+       rating,
+       price,
+       p.name       professor_name,
+       p.surname AS professor_surname,
+       email,
+       phone_number,
+       studies,
+       description,
+       s.name    AS subject_name,
+       level,
+       category,
+       location
+FROM contract LEFT JOIN
+     (professors LEFT JOIN users u on professors.professor_id = u.user_id) p on p.professor_id = contract.professor_id LEFT JOIN subjects s on contract.subject_id = s.subject_id);
+

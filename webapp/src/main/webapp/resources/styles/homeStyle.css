@@ -1,0 +1,48 @@
+.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+}
+
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+}
+
+.colorLogo {
+    background-color: #349AC2;
+}
+
+.cardColor{
+    background-color: rgba(1,1,1,0.9);
+}
+
+.border-style:hover{
+
+}
+
+.card-body{
+    margin-top: 3%;
+}
+
+.card-body:hover {
+
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color: inherit;
+    color: black;
+}

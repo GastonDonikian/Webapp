@@ -1,0 +1,2 @@
+alter sequence subjects_subjectid_seq rename to subjects_subject_id_seq;
+

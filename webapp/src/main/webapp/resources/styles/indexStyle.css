@@ -1,0 +1,138 @@
+.important-information{
+    font-size: xxx-large;
+}
+
+.row{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.box-of-professors{
+    margin-bottom: 5%;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.title-color{
+    color: black;
+}
+
+.font-type{
+    font-family: sans-serif;
+}
+
+/*body*/
+/*{*/
+/*    background:#00bcd4;*/
+/*}*/
+
+h1
+{
+    margin:40px 0 60px 0;
+    font-weight:300;
+}
+
+.our-team-main
+{
+    width:100%;
+    height:auto;
+    border-bottom:5px #323233 solid;
+    background:#fff;
+    text-align:center;
+    border-radius:10px;
+    overflow:hidden;
+    position:relative;
+    transition:0.5s;
+    margin-bottom:28px;
+}
+
+
+.our-team-main img
+{
+    border-radius:50%;
+    margin-bottom:20px;
+    width: 90px;
+}
+
+.our-team-main h3
+{
+    font-size:20px;
+    font-weight:700;
+}
+
+.our-team-main p
+{
+    margin-bottom:0;
+}
+
+.team-back
+{
+    width:100%;
+    height:auto;
+    position:absolute;
+    top:0;
+    left:0;
+    padding:5px 15px 0 15px;
+    text-align:left;
+    background:#fff;
+
+}
+
+.team-front
+{
+    width:100%;
+    height:auto;
+    position:relative;
+    z-index:10;
+    background:#fff;
+    padding:15px;
+    bottom:0px;
+    transition: all 0.5s ease;
+}
+
+.our-team-main:hover .team-front
+{
+    bottom:-200px;
+    transition: all 0.5s ease;
+}
+
+.our-team-main:hover
+{
+    border-color:#777;
+    transition:0.5s;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.show-on-hover:hover > ul.dropdown-menu {
+    display: block;
+}
+
+hr {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item{
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #349AC2; !important;
+}
+
+.modal-backdrop
+{
+    opacity:0.2 !important;
+}

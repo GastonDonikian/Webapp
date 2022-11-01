@@ -1,0 +1,7 @@
+DROP VIEW IF EXISTS full_contract;
+DROP VIEW IF EXISTS contract_rating;
+DROP VIEW IF EXISTS professor_rating;
+DROP VIEW IF EXISTS full_review;
+DROP VIEW IF EXISTS full_lesson;
+
+alter table contract drop column rating;

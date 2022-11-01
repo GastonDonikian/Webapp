@@ -1,0 +1,18 @@
+.input-group-prepend span{
+    width: 50px;
+    background-color: #349AC2;
+    color: white;
+    border:0 !important;
+}
+
+input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color: inherit;
+    color: black;
+}
